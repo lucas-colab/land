@@ -1,0 +1,140 @@
+/* Fundo do site com imagem SVG e letras azuis */
+body {
+    background: url('IMG/FundoRPS.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: blue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centralizar logo */
+.logo {
+    display: block;
+    margin: 50px auto 20px auto; /* Espaço ajustado */
+    width: 150px; /* Ajuste conforme necessário */
+}
+
+/* Contêiner para as caixas de contato */
+.contact-container {
+    display: flex; /* Alinhar itens em linha */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    gap: 20px; /* Espaço entre as caixas */
+    margin-bottom: 30px; /* Espaço entre contato e outros elementos */
+}
+
+/* Caixa individual para cada opção de contato */
+.Ligar {
+    display: flex;
+    flex-direction: row; /* Organizar ícone e texto em coluna */
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Fundo branco para destaque */
+    border: 2px solid rgb(84, 84, 143); /* Borda azul */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    width: 120px; /* Largura fixa para as caixas */
+    height: 50px; /* Altura fixa para as caixas */
+    cursor: pointer;
+    text-align: center; /* Centralizar o texto */
+    gap: 10px; /* Espaço entre ícone e texto */
+}
+
+.SalvarContato {
+    display: flex;
+    flex-direction: row; /* Organizar ícone e texto em coluna */
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Fundo branco para destaque */
+    border: 2px solid rgb(84, 84, 143); /* Borda azul */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    width: 130px; /* Largura fixa para as caixas */
+    height: 50px; /* Altura fixa para as caixas */
+    cursor: pointer;
+    text-align: center; /* Centralizar o texto */
+}
+
+
+.Ligar img {
+    width: 40px; /* Ajuste conforme necessário */
+    margin-bottom: 5px; /* Espaço entre o ícone e o texto */
+    
+}
+
+.SalvarContato img {
+    width: 40px; /* Ajuste conforme necessário */
+    margin-bottom: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.Ligar, .SalvarContato {
+    color: rgb(0, 0, 0); /* Cor azul para o texto */
+    font-size: 14px; /* Tamanho da fonte ajustado */
+    font-weight: bold; /* Deixar o texto em negrito */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+.contact-container img {
+    width: 40px; /* Ajuste conforme necessário */
+    cursor: pointer;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px; /* Espaço ajustado */
+}
+
+.social-icons img {
+    width: 40px; /* Ajuste conforme necessário */
+    cursor: pointer;
+}
+
+/* Rodapé azul */
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustar o tamanho da logo */
+    .logo {
+        width: 120px; /* Reduzir o tamanho da logo */
+        margin: 30px auto 15px auto; /* Ajustar margens */
+    }
+
+    /* Ajustar opções de contato */
+    .contact-container {
+        flex-direction: row; /* Empilhar os itens horizontal */
+        gap: 15px; /* Reduzir o espaço entre os itens */
+    }
+
+    .contact-container img {
+        width: 40px; /* Reduzir o tamanho dos ícones */
+    }
+
+    /* Ajustar redes sociais */
+    .social-icons {
+        flex-wrap: wrap; /* Permitir quebra de linha se necessário */
+        gap: 10px; /* Reduzir o espaço entre os ícones */
+    }
+
+    .social-icons img {
+        width: 35px; /* Reduzir o tamanho dos ícones */
+    }
+
+    /* Ajustar rodapé */
+    footer {
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+        padding: 8px 0; /* Ajustar o espaçamento */
+    }
+}
