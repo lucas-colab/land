@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white; /* Fundo branco para destaque */
-    border: 2px solid rgb(84, 84, 143); /* Borda azul */
+    border: 2px solid rgb(31,30,90,255); /* Borda azul */
     border-radius: 15px; /* Bordas arredondadas */
     padding: 10px; /* Espaçamento interno */
     width: 120px; /* Largura fixa para as caixas */
@@ -47,7 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white; /* Fundo branco para destaque */
-    border: 2px solid rgb(84, 84, 143); /* Borda azul */
+    border: 2px solid rgb(31,30,90,255); /* Borda azul */
     border-radius: 15px; /* Bordas arredondadas */
     padding: 10px; /* Espaçamento interno */
     width: 130px; /* Largura fixa para as caixas */
@@ -93,9 +93,81 @@ body {
     cursor: pointer;
 }
 
-/* Rodapé azul */
+/* Caixas cases de sucesso */
+.section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Empilhar as caixas verticalmente */
+    gap: 20px; /* Espaçamento entre as caixas */
+    align-items: center; /* Centralizar as caixas horizontalmente */
+}
+
+/* Caixas cases de sucesso */
+.box1 {
+
+}
+
+/* Caixas cases de sucesso */
+.box2 {
+
+}
+
+/* Caixas cases de sucesso */
+.box3 {
+  
+}
+
+.box4 {
+
+}
+
+
+.box1 {
+    /* seu estilo atual... */
+    position: relative;        /* para posicionar botões dentro */
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%; /* Ajusta para ocupar toda a largura da caixa */
+    max-width: 300px; /* Largura máxima do slider */
+    height: 200px; /* Altura fixa do slider */
+    overflow: hidden; /* Esconde as partes da imagem fora do contêiner */
+    margin: 0 auto; /* Centraliza o slider */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slides img {
+    width: 300px;              /* mesma largura do .slider */
+    flex-shrink: 0;
+    object-fit: cover;         /* ajusta se for diferente da proporção */
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  
+
+/* Rodapé*/
 footer {
-    background-color: blue;
+    background-color: rgba(31,30,90,255);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -103,6 +175,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Rodapé*/
+.footer .container {
+    display: flex; /* Organizar os itens em linha */
+    align-items: center; /* Alinhar verticalmente */
+    justify-content: center; /* Centralizar o texto */
+    position: relative; /* Permitir posicionamento absoluto da imagem */
+    text-align: center; /* Centralizar o texto */
+    padding-left: 40px; /* Adicionar espaçamento à direita */
+}
+
+/* Rodapé*/
+.footer .rodape-logo {
+    position: absolute; /* Posicionar a imagem de forma independente */
+    left: 10px; /* Colar a imagem à direita */
+    top: 50%; /* Centralizar verticalmente */
+    transform: translateY(-50%); /* Ajustar para o centro exato */
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Manter a proporção da imagem */
+}
+
 
 /* Estilos responsivos para dispositivos móveis */
 @media (max-width: 768px) {
@@ -132,7 +225,7 @@ footer {
         width: 35px; /* Reduzir o tamanho dos ícones */
     }
 
-    /* Ajustar rodapé */
+    /* rodapé */
     footer {
         font-size: 12px; /* Reduzir o tamanho da fonte */
         padding: 8px 0; /* Ajustar o espaçamento */
