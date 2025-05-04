@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  
   <!-- Seção Hero -->
   <header class="hero">
     <div class="container">
@@ -20,18 +19,16 @@
       <div class="contact-container">
         <!-- Caixa para Ligar -->
         <a href="tel:+5511948653679" class="Ligar">
-          <img src="IMG/call_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Ligar Agora"> 
+          <img src="IMG/call_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Ligar Agora">
           <span>Ligar</span>
         </a>
 
         <!-- Caixa para Salvar Contato -->
         <a href="contato.vcf" download class="SalvarContato">
           <img src="IMG/person_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Salvar Contato">
-          <span>SalvarContato</span>
+          <span>Salvar Contato</span>
         </a>
       </div>
-
-      
 
       <!-- Redes sociais -->
       <div class="social-icons">
@@ -39,78 +36,74 @@
           <img src="IMG/icons8-whatsapp-512.svg" alt="WhatsApp">
         </a>
         <a href="https://instagram.com/TafodaLucas" target="_blank">
-          <img src="IMG/icons8-instagram.svg" alt="Instagram" >
+          <img src="IMG/icons8-instagram.svg" alt="Instagram">
         </a>
+        <!-- Ícone de Wi-Fi clicável -->
         <img id="wifi-btn"
-        src="IMG/icons8-wi-fi-100.png"
-        alt="Wi-Fi"
-        data-ssid="MinhaRede"
-        data-password="minhaSenha123"
-        class="wifi-btn"
-
+             src="IMG/icons8-wi-fi-100.png"
+             alt="Wi-Fi"
+             data-ssid="Luquinhas"
+             data-password="1806luquinhas"
+             class="wifi-btn"
+        >
       </div>
+    </div>
   </header>
 
+  <!-- Modal de Wi-Fi placeholder -->
+  <div id="wifi-modal"></div>
 
-
-
-<!-- Wrapping container: recebe a classe .section -->
-<div class="section">
-
-
-  <section id="box3" class="box3">
-    <div class="slider">
-      <div class="slides">
-        <video src="IMG/VideoCJB.mp4 " 
-               autoplay loop muted playsinline>
-        </video>
-      </div>  
-    </div>    
-  </section>
-
-  <!-- Estas são as "caixas", só precisam da classe .boxX -->
-  <section class="box1">
-    <div class="slider">
-      <div class="slides">
-        <img src="IMG/predio.svg" alt="Slide 1">
-        <img src="IMG/predio2.svg" alt="Slide 3">
-        <img src="IMG/predio1.svg" alt="Slide 2">
+  <!-- Wrapping container: recebe a classe .section -->
+  <div class="section">
+    <!-- Vídeo Box -->
+    <section id="box3" class="box3">
+      <div class="slider">
+        <div class="slides">
+          <video src="IMG/VideoCJB.mp4"
+                 autoplay loop muted playsinline></video>
+        </div>
       </div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </div>
-  </section>
-  
+    </section>
 
-  <section id="box2" class="box2">
-    <div class="slider">
-      <div class="slides">
-        <img src="IMG/predio.svg" alt="Slide 1">
-        <img src="IMG/predio3.svg" alt="Slide 2">
-        <img src="IMG/predio1.svg" alt="Slide 3">
+    <!-- Caixa 1 -->
+    <section class="box1">
+      <div class="slider">
+        <div class="slides">
+          <img src="IMG/predio.svg" alt="Slide 1">
+          <img src="IMG/predio2.svg" alt="Slide 2">
+          <img src="IMG/predio1.svg" alt="Slide 3">
+        </div>
+        <button class="prev">‹</button>
+        <button class="next">›</button>
       </div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </div>
-  </section>
-
-
-  
-
-  <section id="box4" class="box4">
-    <div class="slider">
-      <div class="slides">
-        <img src="IMG/predio.svg" alt="Slide 1">
-        <img src="IMG/send.svg" alt="Slide 2">
-        <img src="IMG/predio1.svg" alt="Slide 3">
+    </section>
+    
+    <!-- Caixa 2 -->
+    <section id="box2" class="box2">
+      <div class="slider">
+        <div class="slides">
+          <img src="IMG/predio.svg" alt="Slide 1">
+          <img src="IMG/predio3.svg" alt="Slide 2">
+          <img src="IMG/predio1.svg" alt="Slide 3">
+        </div>
+        <button class="prev">‹</button>
+        <button class="next">›</button>
       </div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </div>
-  </section>
+    </section>
 
-</div>
-
+    <!-- Caixa 4 -->
+    <section id="box4" class="box4">
+      <div class="slider">
+        <div class="slides">
+          <img src="IMG/predio.svg" alt="Slide 1">
+          <img src="IMG/send.svg" alt="Slide 2">
+          <img src="IMG/predio1.svg" alt="Slide 3">
+        </div>
+        <button class="prev">‹</button>
+        <button class="next">›</button>
+      </div>
+    </section>
+  </div>
 
   <!-- Rodapé -->
   <footer class="footer">
@@ -125,4 +118,3 @@
   <script src="Back.js"></script>
 </body>
 </html>
-
