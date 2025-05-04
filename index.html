@@ -20,13 +20,13 @@
       <div class="contact-container">
         <!-- Caixa para Ligar -->
         <a href="tel:+5511948653679" class="Ligar">
-          <img src="IMG/Ligar.svg" alt="Ligar Agora"> 
+          <img src="IMG/call_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Ligar Agora"> 
           <span>Ligar</span>
         </a>
 
         <!-- Caixa para Salvar Contato -->
         <a href="contato.vcf" download class="SalvarContato">
-          <img src="IMG/Salvar.svg" alt="Salvar Contato">
+          <img src="IMG/person_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Salvar Contato">
           <span>SalvarContato</span>
         </a>
       </div>
@@ -36,26 +36,45 @@
       <!-- Redes sociais -->
       <div class="social-icons">
         <a href="https://wa.me/5511948653679" target="_blank">
-          <img src="IMG/Whats.svg" alt="WhatsApp">
+          <img src="IMG/icons8-whatsapp-512.svg" alt="WhatsApp">
         </a>
         <a href="https://instagram.com/TafodaLucas" target="_blank">
-          <img src="IMG/Insta.jpg" alt="Instagram">
+          <img src="IMG/icons8-instagram.svg" alt="Instagram" >
         </a>
+        <img id="wifi-btn"
+        src="IMG/icons8-wi-fi-100.png"
+        alt="Wi-Fi"
+        data-ssid="MinhaRede"
+        data-password="minhaSenha123"
+        class="wifi-btn"
 
-        </a>
       </div>
-    </div>
   </header>
+
+
+
 
 <!-- Wrapping container: recebe a classe .section -->
 <div class="section">
+
+
+  <section id="box3" class="box3">
+    <div class="slider">
+      <div class="slides">
+        <video src="IMG/VideoCJB.mp4 " 
+               autoplay loop muted playsinline>
+        </video>
+      </div>  
+    </div>    
+  </section>
+
   <!-- Estas são as "caixas", só precisam da classe .boxX -->
   <section class="box1">
     <div class="slider">
       <div class="slides">
-        <img src="IMG/nacoes2.svg" alt="Slide 1">
-        <img src="IMG/nacoes1.svg" alt="Slide 2">
-        <img src="IMG/nacoes2.svg" alt="Slide 3">
+        <img src="IMG/predio.svg" alt="Slide 1">
+        <img src="IMG/predio2.svg" alt="Slide 3">
+        <img src="IMG/predio1.svg" alt="Slide 2">
       </div>
       <button class="prev">‹</button>
       <button class="next">›</button>
@@ -66,46 +85,30 @@
   <section id="box2" class="box2">
     <div class="slider">
       <div class="slides">
-        <img src="IMG/nacoes2.svg" alt="Slide 1">
-        <img src="IMG/nacoes1.svg" alt="Slide 2">
-        <img src="IMG/nacoes2.svg" alt="Slide 3">
+        <img src="IMG/predio.svg" alt="Slide 1">
+        <img src="IMG/predio3.svg" alt="Slide 2">
+        <img src="IMG/predio1.svg" alt="Slide 3">
       </div>
       <button class="prev">‹</button>
       <button class="next">›</button>
     </div>
   </section>
 
-  <section id="box3" class="box3">
-    <div class="slider">
-      <div class="slides">
-        <img src="IMG/nacoes2.svg" alt="Slide 1">
-        <img src="IMG/nacoes1.svg" alt="Slide 2">
-        <img src="IMG/nacoes2.svg" alt="Slide 3">
-      </div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </div>
-  </section>
+
+  
 
   <section id="box4" class="box4">
     <div class="slider">
       <div class="slides">
-        <img src="IMG/nacoes2.svg" alt="Slide 1">
-        <img src="IMG/nacoes1.svg" alt="Slide 2">
-        <img src="IMG/nacoes2.svg" alt="Slide 3">
+        <img src="IMG/predio.svg" alt="Slide 1">
+        <img src="IMG/send.svg" alt="Slide 2">
+        <img src="IMG/predio1.svg" alt="Slide 3">
       </div>
       <button class="prev">‹</button>
       <button class="next">›</button>
     </div>
   </section>
 
-  <section id="wifi-config">
-    <h2>Conectar ao Wi-Fi</h2>
-    <p>Clique no botão abaixo para configurar o Wi-Fi automaticamente no seu dispositivo Apple.</p>
-    <a href="configuracao-wifi.mobileconfig" download="configuracao-wifi.mobileconfig">
-      <button>Baixar Configuração Wi-Fi</button>
-    </a>
-  </section>
 </div>
 
 
@@ -123,34 +126,3 @@
 </body>
 </html>
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>PayloadContent</key>
-    <array>
-        <dict>
-            <key>SSID_STR</key>
-            <string>Luquinhas</string>
-            <key>HIDDEN_NETWORK</key>
-            <false/>
-            <key>EncryptionType</key>
-            <string>WPA</string>
-            <key>Password</key>
-            <string>1806luquinhas</string>
-        </dict>
-    </array>
-    <key>PayloadDisplayName</key>
-    <string>Configuração Wi-Fi</string>
-    <key>PayloadIdentifier</key>
-    <string>com.apple.wifi.managed</string>
-    <key>PayloadOrganization</key>
-    <string>Sua Empresa</string>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>12345678-1234-1234-1234-1234567890ab</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
-</dict>
-</plist>
