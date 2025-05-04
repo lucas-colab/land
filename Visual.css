@@ -170,9 +170,9 @@ footer {
     background-color: rgba(31,30,90,255);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0px; /* Ajustar o espaçamento */
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -184,6 +184,7 @@ footer {
     position: relative; /* Permitir posicionamento absoluto da imagem */
     text-align: center; /* Centralizar o texto */
     padding-left: 40px; /* Adicionar espaçamento à direita */
+    padding: 5px;
 }
 
 /* Rodapé*/

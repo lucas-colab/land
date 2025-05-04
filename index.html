@@ -39,7 +39,7 @@
           <img src="IMG/Whats.svg" alt="WhatsApp">
         </a>
         <a href="https://instagram.com/TafodaLucas" target="_blank">
-          <img src="IMG/Insta.svg" alt="Instagram">
+          <img src="IMG/Insta.jpg" alt="Instagram">
         </a>
 
         </a>
@@ -98,6 +98,14 @@
       <button class="next">›</button>
     </div>
   </section>
+
+  <section id="wifi-config">
+    <h2>Conectar ao Wi-Fi</h2>
+    <p>Clique no botão abaixo para configurar o Wi-Fi automaticamente no seu dispositivo Apple.</p>
+    <a href="configuracao-wifi.mobileconfig" download="configuracao-wifi.mobileconfig">
+      <button>Baixar Configuração Wi-Fi</button>
+    </a>
+  </section>
 </div>
 
 
@@ -114,3 +122,35 @@
   <script src="Back.js"></script>
 </body>
 </html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>SSID_STR</key>
+            <string>Luquinhas</string>
+            <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>EncryptionType</key>
+            <string>WPA</string>
+            <key>Password</key>
+            <string>1806luquinhas</string>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Configuração Wi-Fi</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.wifi.managed</string>
+    <key>PayloadOrganization</key>
+    <string>Sua Empresa</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>12345678-1234-1234-1234-1234567890ab</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
